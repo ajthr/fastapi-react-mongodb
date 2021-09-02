@@ -1,0 +1,10 @@
+FROM node:16-slim
+
+COPY package*.json /
+
+RUN npm install
+
+WORKDIR /web
+COPY . .
+
+CMD ["npm", "start"]

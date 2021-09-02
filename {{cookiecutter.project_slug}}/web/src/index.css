@@ -1,0 +1,41 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #fff;
+    background-color: #36393f;
+    text-align: center;
+    margin: 5rem;
+}​
+
+.container {
+    padding: 5rem;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.subtitle {
+    font-size: 0.85rem;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    width: auto;
+}
+
+.logo {
+    max-height: 70px;
+    margin: 0 1rem;
+}
+
+.source {
+    margin-top: 4rem;
+}

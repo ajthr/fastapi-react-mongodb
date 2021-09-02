@@ -1,0 +1,4 @@
+{
+    "project_slug": "fastapi-react-mongodb",
+    "project_name": "{{ cookiecutter.project_slug }}"
+}
