@@ -1,4 +1,10 @@
-{
+{   
     "project_slug": "fastapi-react-mongodb",
-    "project_name": "{{ cookiecutter.project_slug }}"
+    "project_name": "{{ cookiecutter.project_slug }}",
+    "cloud_database": ["n", "y"],
+    "cloud_db_uri": "",
+    "mongodb_user": "",
+    "mongodb_password": "",
+    "mongodb_database": "{{ cookiecutter.project_slug }}",
+    "secret_key": "super_secret"
 }
