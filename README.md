@@ -1,6 +1,6 @@
 # FastAPI React MongoDB - Base Project Generator
 
-[![test](https://github.com/ajthr/fastapi-react-mongodb/actions/workflows/test.yml/badge.svg)](https://github.com/ajthr/fastapi-react-mongodb/actions/workflows/test.yml)
+[![test](https://github.com/ajthr/fastapi-react-mongodb/actions/workflows/test.yml/badge.svg)](https://github.com/ajthr/fastapi-react-mongodb/actions/workflows/test.yml) ![version](https://img.shields.io/badge/version-0.1-orange)
 
 <div>
 <img src="assets/fastapi-logo.png" alt="fastapi-logo" height="60" /> <img
