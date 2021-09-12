@@ -16,7 +16,7 @@ docker-compose up -d
 docker-compose run --rm api sh -c "pytest"
 
 # Run web tests
-docker-compose run --rm web sh -c "npm run test"
+docker-compose run --rm web sh -c "CI=true npm run test"
 
 # Cleanup
 docker-compose down -v --remove-orphans
