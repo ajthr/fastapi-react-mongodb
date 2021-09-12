@@ -11,7 +11,7 @@ services:
             - ./web:/web
         ports:
             - "3000"
-    {%- if cookiecutter.cloud_database == "n" -%}
+    {% if cookiecutter.external_database == "n" %}
     mongo:
         container_name: {{ cookiecutter.project_slug }}_database
         image: mongo
@@ -19,16 +19,8 @@ services:
         ports:
             - "27017"
         environment:
-            {% if cookiecutter.mongodb_user != "" %}
             MONGO_INITDB_ROOT_USERNAME: {{ cookiecutter.mongodb_user }}
-            {%- elif cookiecutter.mongodb_user == "" -%}
-            MONGO_INITDB_ROOT_USERNAME: root
-            {% endif %}
-            {%- if cookiecutter.mongodb_user != "" -%}
-            MONGO_INITDB_ROOT_USERNAME: {{ cookiecutter.mongodb_password }}
-            {%- elif cookiecutter.mongodb_user == "" -%}
-            MONGO_INITDB_ROOT_PASSWORD: password
-            {%- endif -%}
+            MONGO_INITDB_ROOT_PASSWORD: {{ cookiecutter.mongodb_password }}
     {% endif %}
 
     api:

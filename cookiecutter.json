@@ -1,10 +1,10 @@
-{   
-    "project_slug": "fastapi-react-mongodb",
-    "project_name": "{{ cookiecutter.project_slug }}",
-    "cloud_database": ["n", "y"],
-    "cloud_db_uri": "",
-    "mongodb_user": "",
-    "mongodb_password": "",
+{   "": "FastAPI React MongoDB help]\n\nexternal_database:\n\toptions: y/n\n\tdefault: n\n\t\twhether to use external database like mongodb atlas.\nexternal_db_uri:\n\tdefault: None\n\t\t[OPTIONAL] External database uri. skip this if not using one.\nmongodb_user\n\tdefault: root\n\t\t[OPTIONAL] Database user. skip this if using external database.\nmongodb_user\n\tdefault: password\n\t\t[OPTIONAL] Database password. skip this if using external database.\nsecret_key:\n\tdefault:secret_key\n\t\tsecret key to use in api.\n\n[Please press enter key to continue",
+    "project_name": "fastapi-react-mongodb",
+    "project_slug": "{{ cookiecutter.project_name.lower().replace(' ', '_').replace('-', '_') }}",
+    "external_database": "n",
+    "external_db_uri": "",
+    "mongodb_user": "root",
+    "mongodb_password": "password",
     "mongodb_database": "{{ cookiecutter.project_slug }}",
     "secret_key": "super_secret"
 }
